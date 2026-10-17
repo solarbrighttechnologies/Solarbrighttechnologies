@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Bright Technologies | Registered Enterprise · Bikaner, Rajasthan</title>
+  <meta name="description" content="REGISTERED ENTERPRISE · BIKANER. Solar Bright Technologies is a premier solar consultancy company providing more efficient and accurate requirement fulfillment in Bikaner. Managed by Dinesh Sir (7852044655). SERVICES PROVIDE PRESENT ONLY IN BIKANER.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    input[type=range] { accent-color: #f59e0b; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <!-- ========================================== -->
+  <!-- 1. HEADER / NAVIGATION BAR -->
+  <!-- ========================================== -->
+  <div class="bg-amber-500 text-slate-950 text-[11px] font-extrabold tracking-wider py-1.5 px-4 text-center">
+    <span>📍 SERVICES PROVIDE PRESENT ONLY IN BIKANER · PREMIER SOLAR CONSULTANCY ENTERPRISE</span>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-500 flex items-center justify-center text-white shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-sun text-xl"></i>
+          </div>
+          <div>
+            <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight font-display">SOLAR BRIGHT</span>
+            <span class="text-xs font-bold text-amber-600 tracking-wider uppercase block">Technologies · Registered Enterprise</span>
+          </div>
+        </a>
+
+        <nav class="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="#home" class="hover:text-amber-600 transition-colors">Home</a>
+          <a href="#office" class="hover:text-amber-600 transition-colors">Bikaner Office</a>
+          <a href="#services" class="hover:text-amber-600 transition-colors">Consultancy & Services</a>
+          <a href="#calculator" class="hover:text-amber-600 transition-colors">ROI Calculator</a>
+          <a href="#projects" class="hover:text-amber-600 transition-colors">Featured Projects</a>
+          <a href="#testimonials" class="hover:text-amber-600 transition-colors">Testimonials</a>
+          <a href="#contact" class="hover:text-amber-600 transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:7852044655" class="flex items-center gap-2 text-xs font-bold text-slate-900 bg-amber-100 hover:bg-amber-200 border border-amber-300 rounded-xl px-3.5 py-2 transition-all">
+            <i class="fa-solid fa-phone text-amber-600"></i>
+            <span>7852044655</span>
+          </a>
+          <a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" title="View Solar Bright Technologies on Google Profile" class="p-2 text-slate-700 hover:text-sky-600 bg-sky-50 hover:bg-sky-100 border border-sky-200 rounded-xl transition-all">
+            <i class="fa-brands fa-google text-lg text-sky-600"></i>
+          </a>
+          <a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" title="Follow @solarbrighttechnologies on Instagram" class="p-2 text-slate-700 hover:text-pink-600 bg-pink-50 hover:bg-pink-100 border border-pink-200 rounded-xl transition-all">
+            <i class="fa-brands fa-instagram text-lg text-pink-600"></i>
+          </a>
+          <a href="https://wa.me/917852044655?text=Hello%20DINESH%20SIR%20,%20I%20need%20a%20solar%20quotation." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-sm transition-all duration-200 flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>WhatsApp Quotation</span>
+          </a>
+        </div>
+
+        <button id="menu-btn" class="xl:hidden p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation Menu">
+          <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden xl:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+      <div class="p-3 bg-amber-50 rounded-xl border border-amber-300 text-xs font-bold text-amber-950">
+        SERVICES PROVIDE PRESENT ONLY IN BIKANER
+      </div>
+      <a href="#home" class="block py-2 text-base font-medium text-slate-700 hover:text-amber-600 mobile-nav-link">Home</a>
+      <a href="#office" class="block py-2 text-base font-medium text-slate-700 hover:text-amber-600 mobile-nav-link">Bikaner Office & Team</a>
+      <a href="#services" class="block py-2 text-base font-medium text-slate-700 hover:text-amber-600 mobile-nav-link">Services</a>
+      <a href="#calculator" class="block py-2 text-base font-medium text-slate-700 hover:text-amber-600 mobile-nav-link">ROI Calculator</a>
+      <a href="#projects" class="block py-2 text-base font-medium text-slate-700 hover:text-amber-600 mobile-nav-link">Featured Projects</a>
+      <a href="#contact" class="block py-2 text-base font-medium text-slate-700 hover:text-amber-600 mobile-nav-link">Contact</a>
+      <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+        <a href="tel:7852044655" class="flex items-center justify-center gap-2 py-2.5 text-sm font-bold text-slate-900 bg-amber-400 rounded-xl">
+          <i class="fa-solid fa-phone"></i> Call Dinesh Sir: 7852044655
+        </a>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-2.5 text-xs font-bold text-sky-900 bg-sky-100 hover:bg-sky-200 border border-sky-300 rounded-xl shadow-sm">
+            <i class="fa-brands fa-google text-sky-600"></i>
+            <span>Google Profile</span>
+          </a>
+          <a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-2.5 text-xs font-bold text-white bg-gradient-to-r from-amber-500 via-pink-600 to-purple-600 rounded-xl shadow-sm">
+            <i class="fa-brands fa-instagram text-base"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+        <a href="https://wa.me/917852044655?text=Hello%20DINESH%20SIR%20,%20I%20need%20a%20solar%20quotation." target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-md mobile-nav-link">
+          WhatsApp Dinesh Sir
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. HERO SECTION -->
+  <!-- ========================================== -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-b from-amber-50/60 via-white to-slate-50 pt-8 pb-20 lg:pt-12 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          
+          <div class="flex flex-wrap items-center gap-2 text-xs font-semibold text-slate-700">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-500 text-slate-950 rounded-full font-extrabold tracking-wide shadow-sm">
+              <i class="fa-solid fa-location-dot"></i> SERVICES PROVIDE PRESENT ONLY IN BIKANER
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-sky-100 text-sky-950 rounded-full border border-sky-300 font-bold">
+              <i class="fa-solid fa-certificate text-sky-700"></i> REGISTERED ENTERPRISE
+            </span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15] font-display">
+            Powering A <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-500">Brighter Tomorrow</span> In Bikaner
+          </h1>
+
+          <!-- Solar Consultancy Company Announcement -->
+          <div class="p-4 bg-amber-50/90 rounded-2xl border border-amber-200 space-y-1">
+            <div class="flex items-center gap-2 font-bold text-amber-950 text-sm">
+              <i class="fa-solid fa-compass text-amber-600"></i>
+              <span>Premier Solar Consultancy Enterprise in Bikaner</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <strong>Solar Bright Technologies</strong> is a dedicated solar consultancy company who provide <strong>more efficient and more accurate requirement fulfillment in Bikaner</strong>. Led by Enterprise Manager <strong>Dinesh Sir</strong> in Mukta Prasad Colony.
+            </p>
+          </div>
+
+          <p class="text-base text-slate-600 leading-relaxed max-w-2xl">
+            From precision roof analysis to heavy-duty rust-resistant structures and Central PM Surya Ghar subsidy clearances up to ₹78,000, we engineer solar power tailored to your exact energy load.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <a href="https://wa.me/917852044655?text=Hello%20DINESH%20SIR%20,%20I%20need%20a%20solar%20quotation." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-lg shadow-emerald-600/25 transition-all duration-200">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Get Quotation on WhatsApp</span>
+            </a>
+            <a href="tel:7852044655" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-bold text-slate-900 bg-amber-100 hover:bg-amber-200 border border-amber-300 rounded-xl shadow-sm transition-all duration-200">
+              <i class="fa-solid fa-phone text-amber-700"></i>
+              <span>Call Dinesh Sir: 7852044655</span>
+            </a>
+            <a href="#calculator" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 rounded-xl shadow-sm transition-all duration-200">
+              <i class="fa-solid fa-calculator text-amber-600"></i>
+              <span>Calculate Savings</span>
+            </a>
+          </div>
+
+          <div class="pt-5 border-t border-slate-200 grid grid-cols-3 gap-4 text-left">
+            <div>
+              <p class="text-xl sm:text-2xl font-extrabold text-slate-900 tabular-nums">100%</p>
+              <p class="text-[11px] text-slate-500 font-medium mt-0.5">Accurate Sizing</p>
+            </div>
+            <div>
+              <p class="text-xl sm:text-2xl font-extrabold text-slate-900 tabular-nums">Up to 100%</p>
+              <p class="text-[11px] text-slate-500 font-medium mt-0.5">Electricity Bill Cut</p>
+            </div>
+            <div>
+              <p class="text-xl sm:text-2xl font-extrabold text-slate-900 tabular-nums">25 Yrs</p>
+              <p class="text-[11px] text-slate-500 font-medium mt-0.5">Linear Warranty</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Hero Container: Official Solar Team Poster Visual (Zero person photo) */}
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden border border-slate-300 shadow-2xl bg-gradient-to-b from-slate-100 via-white to-slate-900 p-6 sm:p-8 flex flex-col justify-between text-slate-900">
+            
+            <div class="flex items-start justify-between border-b border-slate-200 pb-3">
+              <div>
+                <span class="text-xl font-bold font-display text-slate-900 block">SOLAR BRIGHT</span>
+                <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Technologies</span>
+              </div>
+              <div class="text-right">
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-sky-800 bg-sky-100 px-2 py-0.5 rounded-full border border-sky-300 block">
+                  REGISTERED ENTERPRISE
+                </span>
+                <span class="text-xs font-bold text-slate-700 mt-1 block">Mukta Prasad Colony, Bikaner</span>
+              </div>
+            </div>
+
+            <div class="py-4 space-y-3">
+              <div class="relative rounded-2xl overflow-hidden border border-slate-300 shadow-lg aspect-video bg-slate-900">
+                <img 
+                  src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" 
+                  alt="Solar Bright Technologies Bikaner Rooftop Solar Installation" 
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute bottom-2 left-2 right-2 p-2 bg-slate-950/90 backdrop-blur-md rounded-xl border border-amber-400/40 flex items-center justify-between text-white text-xs">
+                  <div>
+                    <span class="font-extrabold text-amber-400 block">Dinesh Sir · Enterprise Manager</span>
+                    <span class="text-[10px] text-slate-300">Hotline: 7852044655 · Bikaner Only</span>
+                  </div>
+                  <span class="text-[10px] font-bold bg-amber-500 text-slate-950 px-2 py-0.5 rounded">
+                    VERIFIED
+                  </span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 text-xs">
+                <div class="p-2 rounded-xl bg-amber-50 border border-amber-200">
+                  <p class="font-bold text-slate-900 text-[11px]"><i class="fa-solid fa-shield text-amber-600 mr-1"></i> HIGH STRENGTH</p>
+                  <p class="text-[9px] text-slate-600">Engineered for desert load</p>
+                </div>
+                <div class="p-2 rounded-xl bg-sky-50 border border-sky-200">
+                  <p class="font-bold text-slate-900 text-[11px]"><i class="fa-solid fa-circle-check text-sky-600 mr-1"></i> CORROSION RESISTANT</p>
+                  <p class="text-[9px] text-slate-600">Galvanized for 25+ years</p>
+                </div>
+                <div class="p-2 rounded-xl bg-emerald-50 border border-emerald-200">
+                  <p class="font-bold text-slate-900 text-[11px]"><i class="fa-solid fa-wrench text-emerald-600 mr-1"></i> FAST INSTALLATION</p>
+                  <p class="text-[9px] text-slate-600">Precision roof anchoring</p>
+                </div>
+                <div class="p-2 rounded-xl bg-purple-50 border border-purple-200">
+                  <p class="font-bold text-slate-900 text-[11px]"><i class="fa-solid fa-bolt text-purple-600 mr-1"></i> 100% ACCURATE</p>
+                  <p class="text-[9px] text-slate-600">Requirement fulfillment</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-200 text-center text-xs text-slate-600 flex items-center justify-between">
+              <span>📍 Mukta Prasad Colony</span>
+              <a href="tel:7852044655" class="font-bold text-amber-600 hover:underline">📞 +91 78520 44655</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 3. BIKANER SHOWROOM & TEAM -->
+  <!-- ========================================== -->
+  <section id="office" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">REGISTERED ENTERPRISE · BIKANER</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-display">Solar Bright Technologies</h2>
+        <p class="text-base text-slate-600 mt-4 leading-relaxed">
+          We are a dedicated solar consultancy enterprise who provide <strong>more efficient and more accurate requirement fulfillment in Bikaner</strong>. Led by Enterprise Manager <strong>Dinesh Sir</strong> in Mukta Prasad Colony.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        {/* Left Column: Official Poster Graphic (Pure Solar, zero person photo) */}
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden border border-slate-300 shadow-2xl bg-slate-950 text-white max-w-lg mx-auto">
+            <img 
+              src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" 
+              alt="Solar Bright Technologies Bikaner Rooftop Solar Installation" 
+              class="w-full h-auto object-cover rounded-3xl"
+            />
+            <div class="p-6 bg-slate-900 space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-amber-400 font-extrabold text-sm">Dinesh Sir · Enterprise Manager</span>
+                <span class="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded border border-amber-500/30">Mukta Prasad Colony</span>
+              </div>
+              <p class="text-xs text-slate-400">Direct hotline for quotes & site survey: +91 78520 44655</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column: Office Details */}
+        <div class="lg:col-span-6 bg-slate-900 text-white rounded-3xl p-8 shadow-xl space-y-6">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Consultancy Headquarters</span>
+              <h3 class="text-2xl font-bold font-display text-white mt-1">Mukta Prasad Colony, Bikaner</h3>
+            </div>
+            <span class="text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3 py-1 rounded-full">
+              SERVICES IN BIKANER ONLY
+            </span>
+          </div>
+
+          <div class="p-4 bg-slate-800 rounded-2xl border border-slate-700 space-y-1">
+            <h4 class="text-sm font-bold text-amber-400">Accurate Requirement Sizing & Zero Extra Cost</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Our solar consultancy enterprise accurately analyzes your connected load, shadow patterns, and electricity tariffs to fulfill your exact energy requirements with zero wastage.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 text-xs text-slate-300">
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/60">
+              <span class="font-bold text-white block mb-1">Live Displays</span>
+              <span>Mono PERC panels, inverters & heavy GI structures.</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/60">
+              <span class="font-bold text-white block mb-1">Local Support</span>
+              <span>Fast on-ground response across all Bikaner areas.</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/60">
+              <span class="font-bold text-white block mb-1">Fast Installation</span>
+              <span>MNRE compliance with zero roof-leakage anchoring.</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/60">
+              <span class="font-bold text-white block mb-1">Subsidy Desk</span>
+              <span>PM Surya Ghar direct ₹78,000 bank DBT assistance.</span>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <span class="text-xs text-slate-400 block font-medium">Enterprise Manager</span>
+              <span class="text-base font-bold text-white">Dinesh Sir (7852044655)</span>
+            </div>
+            <a href="https://wa.me/917852044655?text=Hello%20DINESH%20SIR%20,%20I%20need%20a%20solar%20quotation." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-all flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+              <span>WhatsApp Dinesh Sir</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 4. SERVICES -->
+  <!-- ========================================== -->
+  <section id="services" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Our Services</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-display">Solar Solutions In Bikaner</h2>
+        <p class="text-base text-slate-600 mt-4 leading-relaxed">
+          Engineered for domestic homes, commercial buildings, agro irrigation, and battery backups in Bikaner.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        {/* Card 1: Residential Solar on House Roof */}
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-video overflow-hidden bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Residential Solar on House Roof" class="w-full h-full object-cover" />
+            <span class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">1 kW – 15 kW</span>
+          </div>
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900">Residential Solar Rooftop</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Transform your home roof into a power plant. Cut electricity bills by up to 100% and claim up to ₹78,000 Central Govt. PM Surya Ghar DBT subsidy.
+              </p>
+            </div>
+            <a href="#contact" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1 mt-4">
+              <span>Get Residential Quote</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* Card 2: Commercial & Industrial Solar */}
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-video overflow-hidden bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80" alt="Commercial Rooftop Solar" class="w-full h-full object-cover" />
+            <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">20 kW – 500+ kW</span>
+          </div>
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900">Commercial & Industrial Solar</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Heavy-duty solar plants for Bikaner factories, cold storages, hospitals, and educational premises with 40% accelerated depreciation tax benefits.
+              </p>
+            </div>
+            <a href="#contact" class="text-xs font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1 mt-4">
+              <span>Get Commercial Quote</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* Card 3: Hybrid & Battery Storage */}
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-video overflow-hidden bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1548611716-ad782c589b35?auto=format&fit=crop&w=800&q=80" alt="Solar Battery Storage Unit" class="w-full h-full object-cover" />
+            <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Lithium / Gel</span>
+          </div>
+          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900">Off-Grid & Hybrid Battery Storage</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Smart LiFePO4 long-cycle battery systems for 24/7 power backup with instantaneous switchover. Zero power cut worries.
+              </p>
+            </div>
+            <a href="#contact" class="text-xs font-bold text-purple-600 hover:text-purple-700 flex items-center gap-1 mt-4">
+              <span>Get Battery Quote</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. ROI CALCULATOR (STRICTLY IN ₹ INR) -->
+  <!-- ========================================== -->
+  <section id="calculator" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Interactive Tool</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 font-display">Solar Savings Calculator (₹ INR)</h2>
+        <p class="text-sm text-slate-400 mt-2">Adjust your monthly electricity bill to calculate estimated solar system size and savings.</p>
+      </div>
+
+      <div class="bg-slate-800 rounded-3xl p-6 sm:p-10 border border-slate-700 shadow-2xl space-y-6">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="text-xs font-bold uppercase text-slate-300">Monthly Electricity Bill</label>
+            <span id="slider-val" class="text-xl font-bold text-amber-400 font-mono">₹4,500 / mo</span>
+          </div>
+          <input type="range" id="roi-slider" min="1000" max="30000" step="500" value="4500" class="w-full h-2.5 bg-slate-700 rounded-lg cursor-pointer">
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-slate-700 text-center">
+          <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+            <span class="text-[11px] text-slate-400 block font-medium">Recommended System</span>
+            <span id="calc-kw" class="text-2xl font-bold text-white mt-1 block">4.7 kW</span>
+          </div>
+          <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+            <span class="text-[11px] text-slate-400 block font-medium">Monthly Savings</span>
+            <span id="calc-savings" class="text-2xl font-bold text-emerald-400 mt-1 block">₹4,275</span>
+          </div>
+          <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+            <span class="text-[11px] text-slate-400 block font-medium">PM Surya Subsidy</span>
+            <span id="calc-subsidy" class="text-2xl font-bold text-amber-400 mt-1 block">₹78,000</span>
+          </div>
+          <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+            <span class="text-[11px] text-slate-400 block font-medium">Est. Payback</span>
+            <span id="calc-payback" class="text-2xl font-bold text-sky-400 mt-1 block">3.1 Yrs</span>
+          </div>
+        </div>
+
+        <div class="text-center pt-2">
+          <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm shadow-md transition-all">
+            <span>Apply For Free Solar Quotation</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 6. FEATURED PROJECTS (2 IMAGES AS REQUESTED) -->
+  <!-- ========================================== -->
+  <section id="projects" class="py-20 bg-slate-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Proven Installations</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 font-display">Featured Solar Installations</h2>
+        <p class="text-base text-slate-400 mt-4 leading-relaxed">
+          On-ground rooftop installations engineered and commissioned in Bikaner by Solar Bright Technologies.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1000&q=80" alt="Residential Solar Plant Bikaner" class="w-full aspect-video object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-bold text-amber-400 uppercase">5 kW On-Grid Rooftop</span>
+            <h3 class="text-xl font-bold font-display text-white mt-1">Mukta Prasad Colony, Bikaner</h3>
+            <p class="text-xs text-slate-400 mt-2">Elevated rust-resistant galvanized structure with 100% bill cut and ₹78,000 PM Surya Ghar subsidy approval.</p>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1000&q=80" alt="Commercial Solar Plant Bikaner" class="w-full aspect-video object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-bold text-sky-400 uppercase">50 kW Industrial Array</span>
+            <h3 class="text-xl font-bold font-display text-white mt-1">Industrial Area, Bikaner</h3>
+            <p class="text-xs text-slate-400 mt-2">Trapezoidal non-penetrating clamps with multi-MPPT high yield inverters and 40% accelerated depreciation tax benefit.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 7. CONTACT & GOOGLE FORM ONLY -->
+  <!-- ========================================== -->
+  <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Free Rooftop Quotation</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-display">Official Solar Quotation Form</h2>
+        <p class="text-base text-slate-600 mt-4 leading-relaxed">
+          Fill out our official Google Form below or reach out directly to Enterprise Manager <strong>Dinesh Sir</strong>.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        {/* Contact Info Column */}
+        <div class="lg:col-span-5 bg-slate-900 text-white p-8 rounded-3xl shadow-xl space-y-6">
+          <div class="border-b border-slate-800 pb-4">
+            <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">REGISTERED ENTERPRISE · BIKANER</span>
+            <h3 class="text-xl font-bold font-display text-white mt-1">Direct Channels</h3>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <a href="tel:7852044655" class="flex items-start gap-4 text-slate-200 hover:text-amber-400 transition-colors p-2 rounded-xl hover:bg-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-medium">Direct Hotline</span>
+                <span class="text-base font-bold text-white">+91 78520 44655</span>
+                <span class="text-[10px] text-amber-400 block">Dinesh Sir (Enterprise Manager)</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/917852044655?text=Hello%20DINESH%20SIR%20,%20I%20need%20a%20solar%20quotation." target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 text-slate-200 hover:text-emerald-400 transition-colors p-2 rounded-xl hover:bg-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-medium">WhatsApp Quotation Hotline</span>
+                <span class="text-sm font-bold text-white">7852044655</span>
+                <span class="text-[10px] text-emerald-400 block">Click: Hello DINESH SIR , I need a solar quotation.</span>
+              </div>
+            </a>
+
+            <a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 text-slate-200 hover:text-sky-400 transition-colors p-2 rounded-xl hover:bg-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0">
+                <i class="fa-brands fa-google text-lg"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-medium">Google Profile & Reviews</span>
+                <span class="text-sm font-bold text-white">Solar Bright Technologies</span>
+                <span class="text-[10px] text-sky-400 block">Scan or click Google QR code below</span>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 text-slate-200 hover:text-pink-400 transition-colors p-2 rounded-xl hover:bg-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center shrink-0">
+                <i class="fa-brands fa-instagram text-lg"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-medium">Instagram Profile</span>
+                <span class="text-sm font-bold text-white">@solarbrighttechnologies</span>
+                <span class="text-[10px] text-pink-400 block">Scan or click Instagram QR code below</span>
+              </div>
+            </a>
+
+            <div class="flex items-start gap-4 text-slate-200 p-2">
+              <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-medium">Bikaner Office</span>
+                <span class="text-sm font-semibold text-white">Mukta Prasad Colony, Bikaner, Rajasthan</span>
+                <span class="text-[10px] text-amber-400 block font-bold mt-1">SERVICES PROVIDE PRESENT ONLY IN BIKANER</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Embedded Google Form ONLY */}
+        <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xl space-y-4">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+            <div>
+              <h3 class="text-xl font-bold font-display text-slate-900">Official Google Form Questionnaire</h3>
+              <p class="text-xs text-slate-500 mt-0.5">Submit your requirements directly to Solar Bright Technologies</p>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXMhP7znLthmYJ9_nhv4_jP_xnSf0dYrglA8-3zFdpKjz32A/viewform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition-all shrink-0">
+              <span>Open in Full Window</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+
+          <div class="w-full rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 relative min-h-[640px]">
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLScXMhP7znLthmYJ9_nhv4_jP_xnSf0dYrglA8-3zFdpKjz32A/viewform?embedded=true" 
+              width="100%" 
+              height="660" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0"
+              class="w-full rounded-xl bg-white border-0"
+              loading="lazy"
+            >
+              Loading Google Form…
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Google Profile QR Code & Instagram QR Code Cards Side-by-Side -->
+      <div class="mt-14 pt-10 border-t border-slate-200">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+          <!-- 1. Google Business Profile QR Card -->
+          <div class="relative group rounded-3xl p-6 bg-gradient-to-br from-slate-900 via-sky-950/40 to-slate-900 border border-sky-500/30 shadow-2xl text-white">
+            <div class="flex flex-col sm:flex-row items-center gap-6">
+              <a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" title="Click or Scan to visit Google Profile for Solar Bright Technologies" class="relative block shrink-0 bg-white p-3 rounded-2xl shadow-xl hover:scale-105 transition-all text-center group/qr">
+                <img src="/google_profile_qr.png" alt="Google Profile QR Code for Solar Bright Technologies" class="w-36 h-36 object-contain mx-auto rounded-xl" onerror="this.src='/google_profile_qr.svg'" />
+                <p class="mt-2 text-xs font-black tracking-wider text-slate-950 uppercase font-sans">GOOGLE PROFILE</p>
+                <span class="text-[10px] text-sky-600 font-bold block">Scan QR Code or Tap</span>
+              </a>
+
+              <div class="space-y-2.5 text-center sm:text-left flex-1">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-sky-500/20 border border-sky-400/40 rounded-full text-xs font-bold text-sky-300">
+                  <i class="fa-brands fa-google text-sky-400"></i> Google Business Profile
+                </span>
+                <h4 class="text-xl font-black tracking-tight font-display text-white">
+                  Solar Bright Technologies
+                </h4>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Scan this QR code to view our verified Google profile, customer reviews, site photos, and get map directions to our Mukta Prasad Colony office.
+                </p>
+                <div class="pt-1 flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                  <a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs shadow-md transition-all">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>View on Google</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  </a>
+                  <span class="text-xs text-sky-200 font-medium">Bikaner, Rajasthan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Instagram QR Code Card -->
+          <div class="relative group rounded-3xl p-6 bg-gradient-to-br from-slate-900 via-purple-950/40 to-slate-900 border border-purple-500/30 shadow-2xl text-white">
+            <div class="flex flex-col sm:flex-row items-center gap-6">
+              <a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" title="Click or Scan to visit @solarbrighttechnologies on Instagram" class="relative block shrink-0 bg-white p-3 rounded-2xl shadow-xl hover:scale-105 transition-all text-center group/qr">
+                <img src="/solarbrighttechnologies_qr.png" alt="Instagram QR Code for Solar Bright Technologies" class="w-36 h-36 object-contain mx-auto rounded-xl" onerror="this.src='/solarbrighttechnologies_qr.svg'" />
+                <p class="mt-2 text-xs font-black tracking-wider text-slate-950 uppercase font-sans">SOLARBRIGHTTECHNOLOGIES</p>
+                <span class="text-[10px] text-pink-600 font-bold block">Scan QR Code or Tap</span>
+              </a>
+
+              <div class="space-y-2.5 text-center sm:text-left flex-1">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-pink-500/20 border border-pink-500/40 rounded-full text-xs font-bold text-pink-300">
+                  <i class="fa-brands fa-instagram text-pink-400"></i> Official Instagram Account
+                </span>
+                <h4 class="text-xl font-black tracking-tight font-display text-white">
+                  @solarbrighttechnologies
+                </h4>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Stay updated with our latest rooftop installations across Bikaner, heavy mounting structure fabrications, solar subsidy guides, and live video demonstrations.
+                </p>
+                <div class="pt-1 flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                  <a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-pink-600 to-purple-600 hover:from-amber-600 hover:to-purple-700 text-white font-bold text-xs shadow-lg transition-all">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                    <span>Follow on Instagram</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  </a>
+                  <span class="text-xs text-slate-400 font-medium">@solarbrighttechnologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 8. FOOTER -->
+  <!-- ========================================== -->
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <div class="space-y-4">
+          <span class="text-xl font-bold font-display text-white">SOLAR BRIGHT TECHNOLOGIES</span>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            A premier solar consultancy enterprise providing more efficient and accurate requirement fulfillment in Bikaner. Managed by Dinesh Sir.
+          </p>
+          <div class="text-xs font-bold text-amber-400">
+            REGISTERED ENTERPRISE · BIKANER, RAJASTHAN
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Services in Bikaner</h4>
+          <ul class="space-y-2 text-xs">
+            <li>Solar Plant Installation</li>
+            <li>Rooftop Solar Systems</li>
+            <li>Maintenance & Repair</li>
+            <li>Solar Panel Cleaning</li>
+            <li>Civil & Structural Work</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-amber-400">Home</a></li>
+            <li><a href="#office" class="hover:text-amber-400">Bikaner Office</a></li>
+            <li><a href="#services" class="hover:text-amber-400">Consultancy & Services</a></li>
+            <li><a href="#calculator" class="hover:text-amber-400">ROI Calculator</a></li>
+            <li><a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400">Google Business Profile</a></li>
+            <li><a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400">Instagram Profile</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Contact Dinesh Sir</h4>
+          <ul class="space-y-2 text-xs">
+            <li><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +91 78520 44655</li>
+            <li><i class="fa-brands fa-google text-sky-500 mr-2"></i> Google Profile (Mukta Prasad Colony)</li>
+            <li><i class="fa-brands fa-instagram text-pink-500 mr-2"></i> @solarbrighttechnologies</li>
+            <li><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> solarbrighttechnologies@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Mukta Prasad Colony, Bikaner, Rajasthan</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Google Profile & Instagram QR Codes in Footer Above Bottom Bar -->
+      <div class="py-10 border-b border-slate-900">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+          <!-- Google Business Profile QR in Footer -->
+          <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-center gap-4">
+            <a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-white p-2 rounded-xl text-center block">
+              <img src="/google_profile_qr.png" alt="Google Profile QR Code" class="w-24 h-24 object-contain mx-auto rounded" onerror="this.src='/google_profile_qr.svg'" />
+              <span class="text-[9px] font-bold text-sky-700 block mt-1">Google QR</span>
+            </a>
+            <div class="space-y-1 text-xs">
+              <span class="font-bold text-white flex items-center gap-1.5">
+                <i class="fa-brands fa-google text-sky-400"></i> Google Business Profile
+              </span>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                Scan with smartphone camera to view verified reviews & navigate to our Mukta Prasad Colony office.
+              </p>
+              <a href="https://www.google.com/search?q=Solar+Bright+Technologies+Bikaner+Mukta+Prasad+Colony" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sky-400 font-bold hover:underline text-[11px]">
+                <span>Open Google Profile</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Instagram QR in Footer -->
+          <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-center gap-4">
+            <a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-white p-2 rounded-xl text-center block">
+              <img src="/solarbrighttechnologies_qr.png" alt="Instagram QR Code" class="w-24 h-24 object-contain mx-auto rounded" onerror="this.src='/solarbrighttechnologies_qr.svg'" />
+              <span class="text-[9px] font-bold text-pink-700 block mt-1">Instagram QR</span>
+            </a>
+            <div class="space-y-1 text-xs">
+              <span class="font-bold text-white flex items-center gap-1.5">
+                <i class="fa-brands fa-instagram text-pink-400"></i> @solarbrighttechnologies
+              </span>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                Scan with smartphone camera to explore recent installation reels & solar videos in Bikaner.
+              </p>
+              <a href="https://www.instagram.com/solarbrighttechnologies/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-pink-400 font-bold hover:underline text-[11px]">
+                <span>Open Instagram Profile</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="pt-8 text-center text-xs text-slate-500">
+        © 2026 Solar Bright Technologies · Enterprise Manager: Dinesh Yadav · Bikaner, Rajasthan · Registered Enterprise
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action with Hello DINESH SIR , I need a solar quotation. -->
+  <a href="https://wa.me/917852044655?text=Hello%20DINESH%20SIR%20,%20I%20need%20a%20solar%20quotation." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl transition-all hover:scale-110">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      const slider = document.getElementById('roi-slider');
+      if (slider) {
+        slider.addEventListener('input', (e) => {
+          const val = Number(e.target.value);
+          document.getElementById('slider-val').textContent = '₹' + val.toLocaleString('en-IN') + ' / mo';
+          const kw = (val / 950).toFixed(1);
+          document.getElementById('calc-kw').textContent = kw + ' kW';
+          document.getElementById('calc-savings').textContent = '₹' + Math.round(val * 0.95).toLocaleString('en-IN');
+          document.getElementById('calc-subsidy').textContent = kw <= 1 ? '₹30,000' : (kw <= 2 ? '₹60,000' : '₹78,000');
+          document.getElementById('calc-payback').textContent = '3.1 Yrs';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
